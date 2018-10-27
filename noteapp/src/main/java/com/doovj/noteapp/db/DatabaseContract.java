@@ -1,4 +1,4 @@
-package com.doovj.mynotesapp.db;
+package com.doovj.noteapp.db;
 
 import android.database.Cursor;
 import android.net.Uri;

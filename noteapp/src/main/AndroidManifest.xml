@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.doovj.mynotesapp">
+    package="com.doovj.noteapp">
 
-    <permission android:name="com.doovj.mynotesapp.READ_DATABASE" android:protectionLevel="normal"/>
-    <permission android:name="com.doovj.mynotesapp.WRITE_DATABASE" android:protectionLevel="normal"/>
+    <uses-permission android:name="com.doovj.mynotesapp.READ_DATABASE" />
+    <uses-permission android:name="com.doovj.mynotesapp.WRITE_DATABASE" />
 
     <application
         android:allowBackup="true"
@@ -19,13 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FormAddUpdateActivity"></activity>
-        <provider
-            android:authorities="com.doovj.mynotesapp"
-            android:name=".provider.NoteProvider"
-            android:exported="true"
-            android:readPermission="com.doovj.mynotesapp.READ_DATABASE"
-            android:writePermission="com.doovj.mynotesapp.WRITE_DATABASE" />
+        <activity android:name=".FormActivity"></activity>
     </application>
 
 </manifest>
